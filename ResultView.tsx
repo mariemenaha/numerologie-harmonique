@@ -240,7 +240,7 @@ const ResultView: React.FC<Props> = ({ numbers, user, aiAnalysis, onReset }) => 
             Cette mini analyse offerte a été généré grâce à l'outil crée par <span className="text-gold font-semibold">Marie Menaha</span> - Profiler spécialisé en épanouissement et prospérité.
           </p>
           <p className="text-slate-400 text-xs tracking-widest uppercase">
-            Si vous souhaitez une analyse détaillée, vous pouvez <a href="#" className="text-orange-500 underline hover:text-orange-400 transition-colors">prendre rendez-vous ici</a>
+            Si vous souhaitez une analyse détaillée, vous pouvez <a href="https://cal.com/mariemenaha/20min" className="text-orange-500 underline hover:text-orange-400 transition-colors">prendre rendez-vous ici</a>
           </p>
         </div>
       </div>

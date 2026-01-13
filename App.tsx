@@ -1,11 +1,11 @@
 
 import React, { useState, useCallback } from 'react';
-import Layout from './components/Layout';
-import NumerologyForm from './components/NumerologyForm';
-import ResultView from './components/ResultView';
-import { UserData, NumerologyNumbers } from './types';
-import { getNumerologyTheme } from './utils/numerology';
-import { generatePersonalizedAnalysis } from './services/geminiService';
+import Layout from './Layout';
+import NumerologyForm from './NumerologyForm';
+import ResultView from './ResultView';
+import type { UserData, NumerologyNumbers } from './types';
+import { getNumerologyTheme } from './numerology';
+import { generatePersonalizedAnalysis } from './geminiService';
 
 const App: React.FC = () => {
   const [user, setUser] = useState<UserData | null>(null);

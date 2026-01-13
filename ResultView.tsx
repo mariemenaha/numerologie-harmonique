@@ -261,7 +261,7 @@ const ResultView: React.FC<Props> = ({ numbers, user, aiAnalysis, onReset }) => 
     </div>
           </div> {/* fin print-area */}
   </div>
-  );
+);
 };
 
 export default ResultView;

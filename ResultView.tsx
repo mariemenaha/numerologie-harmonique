@@ -67,6 +67,20 @@ const ResultView: React.FC<Props> = ({ numbers, user, aiAnalysis, onReset }) => 
 
   return (
     <div className="space-y-16 max-w-6xl mx-auto pb-20 px-4">
+
+    {/* BOUTON PDF (ne sera PAS imprimé) */}
+    <div className="no-print flex justify-end mb-6">
+      <button
+        type="button"
+        onClick={() => window.print()}
+        className="px-4 py-2 rounded-full border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 transition text-xs uppercase tracking-widest"
+      >
+        Télécharger en PDF
+      </button>
+    </div>
+
+    {/* ZONE IMPRIMABLE */}
+    <div id="print-area">
       {/* HEADER */}
       <div className="text-center space-y-4">
         <h2 className="text-5xl md:text-6xl mystical-font gold-gradient italic">Ton Thème de la Fleur</h2>
